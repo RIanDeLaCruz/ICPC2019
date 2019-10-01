@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400');
+
+@font-face {
+  font-family: Tahoma;
+  font-size: 1rem;
+  line-height: 1.55;
+  visibility: hidden;
+  letter-spacing: -0.01875em;
+  word-spacing: -0.01875em;
+}
+
+:root {
+  --icpc-blue: #4982C3;
+  --blue-accent-1: #C5D7EC;
+  --blue-accent-2: #79A3D3;
+  --blue-accent-3: #396FAD;
+  --blue-accent-4: #2C5686;
+  --icpc-yellow: #FCBA30;
+  --yellow-accent-1: #FEE6B4;
+  --yellow-accent-2: #FDCD68;
+  --yellow-accent-3: #FBAB04;
+  --yellow-accent-4: #C98903;
+  --icpc-red: #B12C25;
+  --red-accent-1: #EDAEAB;
+  --red-accent-2: #E0716B;
+  --red-accent-3: #87221C;
+  --red-accent-4: #691A16;
+  --icpc-red: #615BA7;
+  --red-accent-1: #BFBDDB;
+  --red-accent-2: #8F8BC1;
+  --red-accent-3: #4C4785;
+  --red-accent-4: #302D53;
+}
+
+html, body {
+  font-size: 100%;
+  line-height: 1.45;
+  font-family: 'Poppins'
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+.body {
+}
+
+.body-bold {
+}
+
+caption, .caption {
+}
