@@ -200,3 +200,60 @@ section ul > h3 {
   margin: 1rem 0 0.833rem;
   margin-left: -1rem;
 }
+
+/*
+ *
+ * Footer
+ *
+ */
+body > footer {
+  padding: 48px;
+  background-color: #2C5686;
+  background-color: var(--blue-accent-4);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+body > footer section {
+  margin-right: 48px;
+}
+
+body > footer h5 {
+  margin: 0;
+}
+
+body > footer ul {
+  padding: 0;
+}
+
+body > footer section:first-child ul {
+  column-count: 2;
+}
+
+body > footer li {
+  list-style-type: none;
+}
+
+body > footer li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body > footer li a:hover,
+body > footer li a:focus,
+body > footer li a:active {
+  text-decoration: underline;
+}
+
+.footer_logos {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+
+.footer_logos img {
+  height: 48px;
+  width: auto;
+  margin: 1rem;
+}
