@@ -81,3 +81,21 @@ caption, .caption {
   height: auto;
   transform: translateY(5px);
 }
+
+body > section {
+  padding: 1rem 2.488rem;
+}
+
+body > section:first-of-type {
+  padding-top: 1.44rem;
+}
+
+body > section > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body > section > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
