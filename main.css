@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i&subset=latin-ext&display=swap');
 
 @font-face {
@@ -31,6 +31,8 @@
   --red-accent-2: #8F8BC1;
   --red-accent-3: #4C4785;
   --red-accent-4: #302D53;
+  --ph-light: #FBCF94;
+  --ph-dark: #F7B967;
 }
 
 html, body {
@@ -112,7 +114,7 @@ body > section {
   padding: 1rem 2.488rem;
 }
 
-body > section > *:first-child {
+body > section:not(.page-header) > *:first-child {
   margin-top: 0;
   padding-top: 0;
 }
@@ -123,10 +125,11 @@ body > section > *:last-child {
 }
 
 .page-header {
-  background-color: #2C5686;
-  background-color: var(--blue-accent-4);
-  color: white;
+  background-color: #FBCF94;
+  background-color: var(--ph-light);
+  color: black;
   padding: 2.488rem;
+  position: relative;
 }
 
 .page-header .body-bold {
@@ -165,6 +168,16 @@ body > section > *:last-child {
 .page-header a:focus,
 .page-header a:active {
   text-decoration: underline;
+}
+
+#top_corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#path2 {
+  fill: var(--ph-dark)!important;
 }
 
 /*
