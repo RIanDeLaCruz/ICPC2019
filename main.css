@@ -40,6 +40,10 @@ html, body {
   box-sizing: border-box;
 }
 
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
 h1 {
 }
 
@@ -80,6 +84,11 @@ caption, .caption {
   width: 75px;
   height: auto;
   transform: translateY(5px);
+}
+
+.page-title {
+  padding: 1rem 2.488rem;
+  margin-bottom: 0;
 }
 
 body > section {
