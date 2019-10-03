@@ -1,6 +1,6 @@
 PNG-20190919T132636Z-001.zip
-*.svg
-*.ai
-*.png
-*.jpg
-*.jpeg
+./*.svg
+./*.ai
+./*.png
+./*.jpg
+./*.jpeg
