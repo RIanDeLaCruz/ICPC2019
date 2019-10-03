@@ -33,9 +33,11 @@
 }
 
 html, body {
+  margin: 0;
+  padding: 0;
   font-size: 100%;
   line-height: 1.45;
-  font-family: 'Poppins'
+  box-sizing: border-box;
 }
 
 h1 {
@@ -54,4 +56,27 @@ h3 {
 }
 
 caption, .caption {
+}
+
+/*
+ *
+ * Page Header
+ *
+ */
+
+.page-header {
+  padding: 10px 40px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('./PNG/PH_Mindanao.png');
+  background-size: cover;
+}
+
+.page-header .logo {
+  display: contents;
+  line-height: 0;
+}
+
+.page-header .logo img {
+  width: 75px;
+  height: auto;
+  transform: translateY(5px);
 }
