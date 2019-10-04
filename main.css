@@ -108,6 +108,15 @@ caption, .caption {
   }
 }
 
+a,
+a:link,
+a:hover,
+a:focus,
+a:active {
+  color: #4982C3;
+  color: var(--icpc-blue);
+}
+
 /*
  *
  * Site Header
