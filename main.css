@@ -228,6 +228,10 @@ body > section > *:last-child {
  *
  */
 
+body > section:last-of-type {
+  margin-bottom: 1.728rem;
+}
+
 section ul:last-child,
 section ol:last-child {
   margin-bottom: 1rem;
@@ -241,6 +245,27 @@ section ol li p:first-of-type {
 section ul > h3 {
   margin: 1rem 0 0.833rem;
   margin-left: -1rem;
+}
+
+#howtoregister {
+  margin-top: 1.728rem;
+}
+
+@media(max-width: 767px) {
+  ol, ul  {
+    padding-inline-start: 1.728rem;
+  }
+  ol ul,
+  ol ol,
+  ul ul,
+  ul ol {
+    padding-inline-start: 0.83rem;
+  }
+
+  #paymentinstructions ul li b,
+  #paymentinstructions ul li span {
+    display: block;
+  }
 }
 
 /*
@@ -284,7 +309,8 @@ body > footer li {
   list-style-type: none;
 }
 
-body > footer li a {
+body > footer li a,
+body > footer li a:link {
   text-decoration: none;
   color: inherit;
 }
