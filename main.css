@@ -152,9 +152,9 @@ body > section > *:last-child {
 }
 
 .page-header {
-  background-color: #FBCF94;
-  background-color: var(--ph-light);
-  color: black;
+  background-color: #4982C3;
+  background-color: var(--blue-accent-3);
+  color: white;
   padding: 2.488rem;
   position: relative;
 }
@@ -202,13 +202,14 @@ body > section > *:last-child {
   text-decoration: underline;
 }
 
-#top_corner {
+#bottom-corner {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
 }
 
 #path2 {
+  fill: #F7B967;
   fill: var(--ph-dark)!important;
 }
 
