@@ -26,11 +26,11 @@
   --red-accent-2: #E0716B;
   --red-accent-3: #87221C;
   --red-accent-4: #691A16;
-  --icpc-red: #615BA7;
-  --red-accent-1: #BFBDDB;
-  --red-accent-2: #8F8BC1;
-  --red-accent-3: #4C4785;
-  --red-accent-4: #302D53;
+  --icpc-violet: #615BA7;
+  --violet-accent-1: #BFBDDB;
+  --violet-accent-2: #8F8BC1;
+  --violet-accent-3: #4C4785;
+  --violet-accent-4: #302D53;
   --ph-light: #FBCF94;
   --ph-dark: #F7B967;
 }
@@ -145,6 +145,31 @@ a:active {
   width: 75px;
   height: auto;
   transform: translateY(5px);
+}
+
+nav {
+  background-color: var(--icpc-red);
+}
+
+nav ul {
+  margin: 0;
+  padding: 10px 40px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:focus,
+nav ul li a:hover,
+nav ul li a:active {
+  text-decoration: underline;
 }
 
 body > section {
