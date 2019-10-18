@@ -387,10 +387,11 @@ body > footer li a:active {
 .dates-selector ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .dates-selector li {
-  display: inline-block;
 }
 
 .dates-selector a {
