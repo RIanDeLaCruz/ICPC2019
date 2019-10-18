@@ -392,9 +392,11 @@ body > footer li a:active {
 }
 
 .dates-selector li {
+  display: block;
 }
 
 .dates-selector a {
+  display: block;
   padding: 1em 1.44em;
   text-decoration: none;
   color: black;
