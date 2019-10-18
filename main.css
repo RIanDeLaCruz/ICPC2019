@@ -176,21 +176,21 @@ nav ul li a:active {
   text-decoration: underline;
 }
 
-body > section {
+body > main section {
   padding: 1rem 2.488rem;
 }
 
-body > section:not(.page-header) {
+body > main section:not(.page-header) {
   max-width: 1080px;
   margin: 0 auto;
 }
 
-body > section:not(.page-header) > *:first-child {
+body > main section:not(.page-header) > *:first-child {
   margin-top: 0;
   padding-top: 0;
 }
 
-body > section > *:last-child {
+body > main section > *:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
