@@ -104,13 +104,13 @@
       </div>
     </footer>
     <script>
-    let menu = document.querySelector('#menu')
-    menu.addEventListener('click', function() {
-      document.querySelector('nav').classList.toggle('slide-menu')
-      document.querySelectorAll('.site-header, main, footer').forEach(el => {
-        el.classList.toggle('slide-in')
+      let menu = document.querySelector('#menu')
+      menu.addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('slide-menu')
+        document.querySelectorAll('.site-header, main, footer').forEach(el => {
+          el.classList.toggle('slide-in')
+        })
       })
-    })
     </script>
   </body>
 </html>
