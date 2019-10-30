@@ -1,10 +1,10 @@
-.homepage_banner {
+.homepage-banner {
   margin: 0 !important;
   padding: 0 !important;
   max-width: 100% !important;
 }
 
-.homepage_banner img {
+.homepage-banner img {
   width: 100%;
 }
 
@@ -17,3 +17,37 @@
   #landscape { display: none; }
   #portrait { display: portrait; }
 }
+
+#invitation {
+  display: inline-flex;
+  align-items: center;
+}
+
+#invitation img {
+  width: 1.44em;
+  margin-right: 1em;
+}
+
+.sponsors-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  justify-content: space-around;
+  grid-template-areas:
+    'dost acer'
+    'dost smart';
+    justify-content: start;
+  align-items: center;
+  grid-gap: 1em;
+}
+
+.sponsors-list img {
+  width: 100px;
+}
+
+#acer { grid-area: acer; }
+#acer img { grid-area: acer; height: 80px; width: auto; }
+#smart { grid-area: smart; align-self: start; }
+#smart img { grid-area: smart; height: 60px; width: auto; }
+#dost { grid-area: dost; }
