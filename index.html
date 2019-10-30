@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>2019 ICPC Asia-Manila Programming Contest</title>
     <link rel="stylesheet" href="./main.css" media="all">
-    <link rel="stylesheet" href="./index.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/index.css" type="text/css" media="all" />
     <script src="https://kit.fontawesome.com/862f24a7ca.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="site-header">
-      <a href="/icpcmanila" class="logo">
-        <img src="./images/AsiaMNL_Short.png" alt="ICPC Manila Logo">
-      </a>
+      <div id="home-container">
+        <button class="btn-outline" id="menu">Menu</button>
+        <a href="./index.html" class="logo">
+          <img src="./images/AsiaMNL_Short.png" alt="ICPC Manila Logo">
+        </a>
+      </div>
       <div>
         <img src="./images/icpcf-logo-header_8x.png" alt="ICPC Manila Logo">
         <img src="./images/sponsor-logo-jb-rgb6x.png" alt="ICPC Manila Logo">
@@ -20,10 +23,13 @@
     </header>
     <nav>
       <ul>
-        <li><a href="./about.html">About</a></li>
+        <li id="home-link"><a href="./index.html">Home</a></li>
         <li><a href="./schedule.html">Schedule of Activities</a></li>
-        <li><a href="./index.html">Registration</a></li>
+        <li><a href="./registration.html">Registration</a></li>
         <li><a href="./sizing.html">Shirt Sizing</a></li>
+        <li><a href="./accommodations.html">Accommodations</a></li>
+        <li><a href="./rules.html">Rules</a></li>
+        <li><a href="./about.html">About</a></li>
       </ul>
     </nav>
     <main>
@@ -83,5 +89,14 @@
         </section>
       </div>
     </footer>
+    <script>
+    let menu = document.querySelector('#menu')
+    menu.addEventListener('click', function() {
+      document.querySelector('nav').classList.toggle('slide-menu')
+      document.querySelectorAll('.site-header, main, footer').forEach(el => {
+        el.classList.toggle('slide-in')
+      })
+    })
+    </script>
   </body>
 </html>

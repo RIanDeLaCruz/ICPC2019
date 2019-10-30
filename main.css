@@ -43,6 +43,7 @@ html, body {
   font-size: 100%;
   line-height: 1.45;
   font-variant-numeric: oldstyle-nums;
+  overflow-x: hidden;
 }
 
 main {
@@ -128,6 +129,7 @@ a:active {
  */
 
 .site-header {
+    transition: all 0.4s ease-in-out;
   padding: 10px 40px;
   background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('./PNG/PH_Mindanao.png');
   background-size: cover;
@@ -137,7 +139,8 @@ a:active {
 }
 
 .site-header img {
-  height: 52px;
+  max-height: 52px;
+  height: 100%;
 }
 
 .site-header .logo {
@@ -146,9 +149,27 @@ a:active {
 }
 
 .site-header .logo img {
-  width: 75px;
-  height: auto;
+  max-width: 75px;
   transform: translateY(5px);
+}
+
+#home-link {
+  display: none;
+}
+
+@media(max-width: 440px) {
+  .site-header {
+    padding: 10px 20px;
+  }
+}
+
+#home-container {
+  display: flex;
+  align-content: center;
+}
+
+#home-container .btn-outline {
+  margin-right: 1.2em;
 }
 
 nav {
@@ -174,6 +195,49 @@ nav ul li a:focus,
 nav ul li a:hover,
 nav ul li a:active {
   text-decoration: underline;
+}
+
+#menu { display: none; }
+
+@media(orientation: portrait) {
+  nav {
+    width: 225px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-225px);
+    transition: all 0.4s ease-in-out;
+  }
+
+  nav ul {
+    display: block;
+    padding: 0;
+  }
+
+  nav.slide-menu {
+    transform: translateX(0);
+  }
+
+  nav li a {
+    display: block;
+    padding: 0.54em;
+    padding-left: 1.44em;
+  }
+
+  .slide-in {
+    transform: translateX(225px);
+  }
+
+  #menu { display: block; }
+
+  #home-link { display: block; padding-top: 1.44em; }
+
+  .site-header .logo img { display: none; }
+}
+
+body > main {
+    transition: all 0.4s ease-in-out;
 }
 
 body > main section {
@@ -309,6 +373,7 @@ section ul > h3 {
  *
  */
 body > footer {
+    transition: all 0.4s ease-in-out;
   padding: 48px;
   background-color: #2C5686;
   background-color: var(--blue-accent-4);
@@ -367,4 +432,26 @@ body > footer li a:active {
   height: 48px;
   width: auto;
   margin: 1rem;
+}
+
+/*
+ *
+ * Components
+ *
+ */
+
+.btn-outline {
+  border: solid 1px #2C5686;
+  color: #2C5686;
+  background-color: white;
+  align-self: center;
+  padding: 0.54em 1em;
+  border-radius: 12px;
+  font-size: 0.87rem;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  background-color: #C5D7EC;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
