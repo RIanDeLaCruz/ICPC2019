@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>2019 ICPC Asia-Manila Programming Contest</title>
     <link rel="stylesheet" href="./main.css" media="all">
-    <link rel="stylesheet" href="./sizing.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/sizing.css" type="text/css" media="all" />
     <script src="https://kit.fontawesome.com/862f24a7ca.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -135,11 +135,10 @@
           <h5>Sitemap</h5>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/registration">How to Register</a></li>
-            <li><a href="/accommodations">Accommodations</a></li>
-            <li><a href="/scoreboard">Scoreboard</a></li>
-            <li><a href="/partners">Partners</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/registration.html">How to Register</a></li>
+            <li><a href="/accommodations.html">Accommodations</a></li>
+            <li><a href="/rules.html">Rules</a></li>
+            <li><a href="/about.html">About</a></li>
           </ul>
         </section>
         <section>
@@ -157,6 +156,13 @@
       </div>
     </footer>
     <script>
+      let menu = document.querySelector('#menu')
+      menu.addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('slide-menu')
+        document.querySelectorAll('.site-header, main, footer').forEach(el => {
+          el.classList.toggle('slide-in')
+        })
+      })
       let rows = document.querySelectorAll('#size-guide-wide tr')
       let table_cells = document.querySelectorAll('#size-guide-wide tbody td')
       table_cells.forEach(el => {
