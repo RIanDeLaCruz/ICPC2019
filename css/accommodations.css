@@ -16,3 +16,12 @@ table td {
   padding: 1em;
   border: solid 1px black;
 }
+
+table caption p {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+table caption p:not(:first-child) {
+  margin-top: 0;
+}
