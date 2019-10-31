@@ -8,8 +8,10 @@ address span {
 
 table {
   border-collapse: collapse;
+  width: 100%;
 }
 
+table th,
 table td {
   padding: 1em;
   border: solid 1px black;
