@@ -35,8 +35,8 @@
   display: grid;
   justify-content: space-around;
   grid-template-areas:
-    'dost acer'
-    'dost smart';
+    'dost acer google'
+    'dost smart google';
     justify-content: start;
   align-items: center;
   grid-gap: 1em;
@@ -46,8 +46,23 @@
   width: 100px;
 }
 
-#acer { grid-area: acer; }
-#acer img { grid-area: acer; height: 80px; width: auto; }
-#smart { grid-area: smart; align-self: start; }
-#smart img { grid-area: smart; height: 60px; width: auto; }
-#dost { grid-area: dost; }
+#dost {
+  grid-area: dost;
+  display: flex;
+  flex-direction: columm;
+  justify-content: center;
+}
+#acer {
+  grid-area: acer;
+  display: flex;
+  justify-content: center;
+}
+#smart {
+  grid-area: smart;
+  align-self: start;
+}
+#google { grid-area: google; }
+
+#acer img { height: 50px; width: auto; }
+#smart img { height: 60px; width: auto; }
+#google img { height: 60px; width: auto; }
