@@ -32,14 +32,9 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: grid;
+  display: flex;
   justify-content: space-around;
-  grid-template-areas:
-    'dost acer google'
-    'dost smart google';
-    justify-content: start;
   align-items: center;
-  grid-gap: 1em;
 }
 
 .sponsors-list img {
@@ -59,7 +54,6 @@
 }
 #smart {
   grid-area: smart;
-  align-self: start;
 }
 #google { grid-area: google; }
 
