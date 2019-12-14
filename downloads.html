@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>2019 ICPC Asia-Manila Programming Contest</title>
+    <title>Accommodations | 2019 ICPC Asia-Manila Programming Contest</title>
     <link rel="stylesheet" href="./main.css" media="all">
-    <link rel="stylesheet" href="./css/index.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/accommodations.css" type="text/css" media="all" />
     <script src="https://kit.fontawesome.com/862f24a7ca.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -36,34 +36,18 @@
       </ul>
     </nav>
     <main>
-      <section class="homepage-banner">
-        <img src="./images/landscape.png" alt="" id="landscape">
-        <img src="./images/portrait.png" alt="" id="portrait">
-      </section>
       <section>
-        <h2>Download your invitation letter</h2>
-        <a
-          id="invitation"
-          href="https://drive.google.com/file/d/1KNjMmup1S0Hv2X2eL8F_46LPsEhMVDtc/view?usp=sharing"
-          target="_blank"
-        >
-          <img src="./icons/envelope-open-text-light.svg" alt="">Download now
-        </a>
-      </section>
-      <section>
-        <h2>Sponsors</h2>
-        <ul class="sponsors-list">
-          <li id="dost">
-            <img src="./images/02_PCIEERD_Logo 3.png" alt="DOST PCIEERD logo">
+        <h1>Downloads</h1>
+        <ul>
+          <li>
+            <a href="https://drive.google.com/file/d/1bwiEWEmJEo3XPrcYFV2U4sm1u3AVxgDx/view?usp=sharing">
+              Program Booklet
+            </a>
           </li>
-          <li id="smart">
-            <img src="./images/01_Smart.png" alt="Smart Telecommunications logo">
-          </li>
-          <li id="acer">
-            <img src="./images/03_Acer Master Brand.png" alt="Acer logo">
-          </li>
-          <li id="google">
-            <img src="./images/Google_Logo.png" alt="Google logo">
+          <li>
+            <a href="https://drive.google.com/file/d/1bwiEWEmJEo3XPrcYFV2U4sm1u3AVxgDx/view?usp=sharing">
+              Practice Session Problem Set
+            </a>
           </li>
         </ul>
       </section>
@@ -95,13 +79,13 @@
       </div>
     </footer>
     <script>
-    let menu = document.querySelector('#menu')
-    menu.addEventListener('click', function() {
-      document.querySelector('nav').classList.toggle('slide-menu')
-      document.querySelectorAll('.site-header, main, footer').forEach(el => {
-        el.classList.toggle('slide-in')
+      let menu = document.querySelector('#menu')
+      menu.addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('slide-menu')
+        document.querySelectorAll('.site-header, main, footer').forEach(el => {
+          el.classList.toggle('slide-in')
+        })
       })
-    })
     </script>
   </body>
 </html>
